@@ -1,0 +1,58 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Value: true
+      Reference Frame: world
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Fused Global Map
+      Topic:
+        Value: /fused_global_map
+      Color Transformer: RGB8
+      Size (m): 0.022
+      Style: Flat Squares
+      Value: true
+    - Class: rviz_default_plugins/Path
+      Name: Robot 0 Path
+      Topic:
+        Value: /robot0/global_path
+      Color: 92; 107; 192
+      Line Width: 0.04
+      Value: true
+    - Class: rviz_default_plugins/Path
+      Name: Robot 1 Path
+      Topic:
+        Value: /robot1/global_path
+      Color: 236; 64; 122
+      Line Width: 0.04
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Name: Inter-Robot Loops
+      Topic:
+        Value: /loop_markers
+      Value: true
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Marker Scale: 0.35
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Value: true
+  Global Options:
+    Background Color: 24; 26; 32
+    Fixed Frame: world
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 4.8
+      Pitch: 0.78
+      Yaw: 0.65
+Window Geometry:
+  Width: 1280
+  Height: 800

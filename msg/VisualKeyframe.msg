@@ -1,0 +1,9 @@
+std_msgs/Header header
+string robot_id
+uint32 keyframe_id
+geometry_msgs/Pose odom_pose
+uint32 num_keypoints
+float32[] keypoints_3d
+uint8[] descriptors
+float32[] global_descriptor
+sensor_msgs/PointCloud2 submap_cloud
